@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_news_default_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".News">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/newsArticle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+              >
+
+                <ImageButton
+                    android:id="@+id/newsArticleP1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginRight="50dp"
+                    android:onClick="selectFragment"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_1" />
+
+                <ImageButton
+                    android:id="@+id/newsArticleP2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:onClick="selectFragment"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="168dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/newsArticleT1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="70dp"
+                    android:text="A NEWS" />
+
+                <Space
+                    android:layout_width="94dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/newsArticleT2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:text="B NEWS" />
+
+                <Space
+                    android:layout_width="168dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <Space
+                    android:layout_width="168dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/newsArticleB1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-70dp"
+                    android:layout_marginEnd="55dp"
+                    android:text="Musk's new speech" />
+
+                <TextView
+                    android:id="@+id/newsArticleB2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="-60dp"
+                    android:text="\International Space Station" />
+
+                <Space
+                    android:layout_width="168dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/newsArticleP3"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginRight="50dp"
+                    android:onClick="selectFragment"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_3" />
+
+                <ImageButton
+                    android:id="@+id/newsArticleP4"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:onClick="selectFragment"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="168dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/newsArticleT4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="70dp"
+                    android:text="C NEWS"
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="27dp"
+                    tools:layout_editor_absoluteX="165dp"
+                    tools:layout_editor_absoluteY="269dp" />
+
+                <Space
+                    android:layout_width="94dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/newsArticleT3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:text="D NEWS"
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="54dp"
+                    tools:layout_editor_absoluteX="192dp"
+                    tools:layout_editor_absoluteY="269dp" />
+
+                <Space
+                    android:layout_width="168dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="168dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/newsArticleB4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="70dp"
+                    android:text="NEW CAR" />
+
+                <Space
+                    android:layout_width="94dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/newsArticleB3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:text="NEW APP" />
+
+                <Space
+                    android:layout_width="168dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
